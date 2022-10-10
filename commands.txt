@@ -1,0 +1,23 @@
+INSIDE PROJECT FOLDER:
+
+GIT:
+echo "# NAME_OF_YOUR_GITHUB_REPO" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Nassim-ux/NAME_OF_YOUR_GITHUB_REPO.git
+git push -u origin main
+
+HEROKU:
+heroku login
+heroku git:remote -a NAME_OF_YOUR_HEROKU_APP
+git add .
+git commit -m "Deployment commit"
+git push heroku main 
+
+heroku ps:scale worker=1
+
+
+
+[couleur oui][recto-verso oui][copies 1][livraison non]
